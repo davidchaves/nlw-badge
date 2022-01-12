@@ -1,12 +1,12 @@
 const linksSocialMedia = {
-  github: 'NilZila',
+  github: 'davidchaves',
   youtube: 'gN3l63M2sfJdNZE_ZsIWaQ',
   facebook: 'David Willian',
-  instagram: 'dvdwilli',
-  twitter: '',
+  instagram: 'david_.chaves',
+  twitter: 'david__chaves'
 }
 
-function changeSocialMediaLinks(){
+function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
 
@@ -14,9 +14,9 @@ function changeSocialMediaLinks(){
   }
 }
 
-changeSocialMediaLinks();
+changeSocialMediaLinks()
 
-function getGitHubProfileInfos(){
+function getGitHubProfileInfos() {
   const url = `https://api.github.com/users/${linksSocialMedia.github}`
 
   fetch(url)
@@ -30,6 +30,6 @@ function getGitHubProfileInfos(){
     })
 }
 
-getGitHubProfileInfos();
+getGitHubProfileInfos()
 
 //ARROW FUNCTIONS
